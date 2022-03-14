@@ -36,7 +36,7 @@ const CreatePolitic = () => {
       observations: politic.observations,
     };
     // Here we create the post logic
-    await axios.post("http://localhost:5000/api/politic", newPolitic);
+    await axios.post("https://politicapp.herokuapp.com/api/politic", newPolitic);
     // Updating the initial value
     setPolitic({ ...valueInitial });
   };
